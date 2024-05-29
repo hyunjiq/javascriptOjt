@@ -1,30 +1,31 @@
 const gnb = {
-    d1 : {
-        sitter : {
-            text:["펫시터가와요"],
-            href:["./펫시터.html"]
+    d1 : [
+        {
+            text:"펫시터가와요",
+            href:"./펫시터.html"
         },
-        trainer : {
-            text:["훈련사"],
-            href:["./훈련사.html"]
+        {
+            text:"훈련사",
+            href:"./훈련사.html"
         },
-        place : {
-            text:["플레이스"],
-            href:["./플레이스.html"]
+        {
+            text:"플레이스",
+            href:"./플레이스.html"
         },
-        social : {
-            text:["사회공헌"],
-            href:["./사회공헌.html"]
+        {
+            text:"사회공헌",
+            href:"./사회공헌.html"
         },
-        community : {
-            text:["커뮤니티"],
-            href:["./커뮤니티.html"]
+        {
+            text:"커뮤니티",
+            href:"./커뮤니티.html"
         },
-        petner : {
-            text:["펫트너"],
-            href:["./펫트너.html"]
+        {
+            text:"펫트너",
+            href:"./펫트너.html"
         },
-    },
+    ],       
+    
     d2 :{
         d2_sitter : [
             {

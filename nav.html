@@ -30,7 +30,12 @@
         <li><a href="${nav_data[1].gnb_li_href}">${nav_data[1].gnb_li_a}</a></li>
         <li><a href="${nav_data[2].gnb_li_href}">${nav_data[2].gnb_li_a}</a></li>
         `;
-
+       
+        let gnbMenu = "";
+       for(var i = 0; i < 3 ; i++){
+        gnbMenu += `<li><a href="${nav_data[i].gnb_li_href}">${nav_data[i].gnb_li_a}</a></li>`
+       }
+       document.querySelector("#gnb").innerHTML = gnbMenu;
     </script>
 </body>
 </html>
