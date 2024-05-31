@@ -25,17 +25,19 @@
             },
     
         ]  
-        document.querySelector("#gnb").innerHTML = `
-        <li><a href="${nav_data[0].gnb_li_href}">${nav_data[0].gnb_li_a}</a></li>
-        <li><a href="${nav_data[1].gnb_li_href}">${nav_data[1].gnb_li_a}</a></li>
-        <li><a href="${nav_data[2].gnb_li_href}">${nav_data[2].gnb_li_a}</a></li>
-        `;
-       
-        let gnbMenu = "";
-       for(var i = 0; i < 3 ; i++){
-        gnbMenu += `<li><a href="${nav_data[i].gnb_li_href}">${nav_data[i].gnb_li_a}</a></li>`
-       }
-       document.querySelector("#gnb").innerHTML = gnbMenu;
+        
+        //[-1] 맨뒤
+        const targetul = document.getElementById("gnb");
+
+        let gnblis = "";
+
+        for(i in nav_data){
+            gnblis += `<li>
+                <a href="${nav_data[i]["gnb_li_href"]}">${nav_data[i].gnb_li_a}</a>
+                </li>`;
+        }
+
+        targetul.innerHTML = gnblis;
     </script>
 </body>
 </html>
