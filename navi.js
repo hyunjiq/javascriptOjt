@@ -100,12 +100,20 @@ window.onload = function(){
         navitag += `<li class="${hd_yys.gnb[x].cls[0]}">
                     <a class="${hd_yys.gnb[x].cls[1]}" href="${hd_yys.gnb[x].href}">
                     ${hd_yys.gnb[x].Text}
-                    </a>
-                    <ul>`;
-        for(){
-
-        };
-        navitag += `</ul></li>`
+                    </a>`;
+        
+        navitag +=`<ul>`
+            for(j in hd_yys.gnb[x].gnb_ul_li){
+                navitag +=`<li class="${hd_yys.gnb[x].cls[4]}">
+                            <a href="${hd_yys.gnb[x].gnb_ul_li[j].href}">
+                                ${hd_yys.gnb[x].gnb_ul_li[j].Text}
+                            </a>
+                            </li>`
+            };
+        navitag +=`</ul>`
+        navitag += `</li>`
+                    
+        
                     
     };
 
