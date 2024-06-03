@@ -94,11 +94,22 @@ const hd_yys ={
 
 window.onload = function(){
 
-    document.querySelector("#hd h1").innerHTML += `<a href="${hd_yys.logo.href}">${hd_yys.logo.Text}</a>`
+    let navitag = ""; 
 
-    document.querySelector("#gnb li").innerHTML += `<a href="${hd_yys.gnb[0].gnb_ul_li[0].href}">${hd_yys.gnb[0].gnb_ul_li[0].Text}</a>`
+    for(x in hd_yys.gnb){
+        navitag += `<li class="${hd_yys.gnb[x].cls[0]}">
+                    <a class="${hd_yys.gnb[x].cls[1]}" href="${hd_yys.gnb[x].href}">
+                    ${hd_yys.gnb[x].Text}
+                    </a>
+                    <ul>`
+                    
+                    `</ul>
+                    </li>`;
+    };
 
-    document.querySelector(".util ul").innerHTML += `<li><a href="${hd_yys.util[0].href}">${hd_yys.util[0].Text}</a></li>`
+    document.querySelector("#gnb").innerHTML = navitag;
+
+
 
     
 }
