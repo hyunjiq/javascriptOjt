@@ -22,8 +22,11 @@
                         // 태그와 태그순서
         btns.forEach(function(ele,idx){
             //console.log(`태그`,ele,`순번`,idx)
-            ele.addEventListener("click",function(){})
-            //!!!!!!!!!!!!!!!!!!!1addEventListener의 프로토타입
+            ele.addEventListener("click",function(){
+                console.log(this); //태그 프로세스를 짧게하는 단어 this 방금 클릭 당한 버튼이 this가 됨
+                targetbox.innerHTML = this.dataset.text;
+                targetbox.style.backgroundColor = this.dataset.bg;
+            });
         });
 
     </script>
