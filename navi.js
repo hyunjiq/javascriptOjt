@@ -101,10 +101,12 @@ window.onload = function(){
                     <a class="${hd_yys.gnb[x].cls[1]}" href="${hd_yys.gnb[x].href}">
                     ${hd_yys.gnb[x].Text}
                     </a>
-                    <ul>`
+                    <ul>`;
+        for(){
+
+        };
+        navitag += `</ul></li>`
                     
-                    `</ul>
-                    </li>`;
     };
 
     document.querySelector("#gnb").innerHTML = navitag;

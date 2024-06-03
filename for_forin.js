@@ -1,11 +1,16 @@
-let conut = 0;
-for(){
-    conut += `<li>`;
-    conut += `<a href="">대메뉴</a>`
-    conut += `<ul>`
-    for(){
-        conut += `<li>소메뉴</li>`
+const yo = ["월","화","수","목","금","토","일"];
+
+
+let conut = "";
+for(var i = 0 ; i < 3; i++){
+
+    conut += `${i + 1}주`;
+
+    for(j in yo){
+        conut += `${yo[j]}요일`
     }
-    conut +=`</ul>`
-    conut += `</li>`
+
+    conut += `${i}마침\n`
 };
+
+console.log(conut);
