@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GNB, LNB, CNB</title>
-    <script src="./tab.js"></script>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#tab li").click(function(){
+                const targetdiv = $(this).find('a').attr('href');
+                $(targetdiv).removeClass('d-none').siblings().addClass('d-none');
+                $(this).addClass('on').siblings(),removeClass('on');
+                //메서드 체인
+            });
+        });
+    </script>
     <style>
         .d-none{
             display: none;
