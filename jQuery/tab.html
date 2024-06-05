@@ -9,7 +9,9 @@
         $(document).ready(function(){
             $("#tab li").click(function(){
                 const targetdiv = $(this).find('a').attr('href');
+                // #notice #gallery #qna
                 $(targetdiv).removeClass('d-none').siblings().addClass('d-none');
+                //$('#notice') $('#gallery') $('#qna')
                 $(this).addClass('on').siblings(),removeClass('on');
                 //메서드 체인
             });
